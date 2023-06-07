@@ -1,3 +1,21 @@
+# Lagus CSS/HTML/JS Test
+
+## Description
+
+This test was built to assess early stage web developers. It is considered by me that developers that can finish this test with a satisfatory result are eligible to resolve simple HTML/CSS tasks for real life problems using NextJS Applications.
+
+The objective is to style the following FIGMA wires: https://www.figma.com/file/tMlYqXVlvvp6gAuxcqFAI5/lagus-test?type=design&node-id=0%3A1&t=Rvwf8776IOpPYVtg-1.
+
+It will be considered a successful implementation if all components are pixel perfect and the page is fully responsive. Both mobile and desktop wires are in the Figma file with all font styles, element spacings and image proportions. There is also an example of the heder button hover effect.
+
+Reach out the one who sent you this test in case you have any questions. I encourage you to do so, since strong communication is the key for a successful delivery.
+
+## Bonus
+
+In the header button, implement a simple behavior of counting how many times the button was clicked.
+
+# NextJS README
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
