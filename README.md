@@ -10,6 +10,11 @@ It will be considered a successful implementation if all components are pixel pe
 
 Reach out the one who sent you this test in case you have any questions. I encourage you to do so, since strong communication is the key for a successful delivery.
 
+## What to deliver
+
+1. Fork this Repo.
+2. Style the page according to the wires
+3. Whenever you are confident on your designs, submit your github forked repo for evaluation.
 ## Bonus
 
 In the header button, implement a simple behavior of counting how many times the button was clicked.
