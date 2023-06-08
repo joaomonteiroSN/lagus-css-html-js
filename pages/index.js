@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import { Counter } from '@/components/counter'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -8,8 +9,8 @@ export default function Home() {
     <body>
       <div class="">
         {/* travar posição no mq desktop */}
-        <header class="h-58 sticky top-0 flex grid-cols-1 bg-header-color justify-between items-center z-10"  >
-          <div class="ml-4">
+        <header class="h-58 sticky top-0 flex grid-cols-1 bg-header-color justify-between items-center z-10">
+          <div class="ml-4 desktop:hidden">
             <Image
               src="menu.svg"
               width={18}
@@ -17,7 +18,8 @@ export default function Home() {
               alt="icon of menu"
             />
           </div>
-          <div class="ml-119 mr-82 ">
+          <Counter></Counter>
+          <div class="ml-119 mr-82 desktop:ml-295 desktop:mr-395">
             <Image
               src="lagus-logo.svg"
               width={118}
@@ -25,7 +27,7 @@ export default function Home() {
               alt="logo"
             />
           </div>
-          <div class="mr-4 flex grid-cols-1 gap-x-4">
+          <div class="mr-4 flex grid-cols-1 gap-x-4 desktop:mr-52">
             <Image
               src="icon-person.svg"
               width={18}
@@ -76,14 +78,14 @@ export default function Home() {
               alt="man and a laptop" />
           </figure>
 
-          <figure class="w-400 rounded-lg">
+          <div class="w-400 col-span-2 rounded-lg">
             <span class="inline-flex items-center w-400 pl-4 h-11 absolute bg-legend-color opacity-75 font-h1 text-base align-middle">Women working in styles and ESLint configurations</span>
             <Image
               src="code-2.svg"
               width={400}
               height={400}
-              alt="woman with headphones coding" />
-          </figure>
+              alt="woman with headphones coding"/>
+          </div>
 
         </div>
       </div>
