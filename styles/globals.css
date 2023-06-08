@@ -6,7 +6,6 @@
 
 
 :root {
-  --font-h1: 'Roboto', sans-serif;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,7 +29,4 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.image-wrapper img {
-  border-radius: 8px;
-}
 
