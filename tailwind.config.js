@@ -6,16 +6,17 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    fontFamily: {
-      'h1': ['Roboto', 'sans-serif']  
-    },
     extend: {
+      fontFamily: {
+        'h1': ['Roboto', 'sans-serif'],  
+      },
       width: {
         '158': '9.875rem',
         '283': '17.688rem',
         '398': '24.875rem',
         '400': '25rem',
         '489': '32.5rem',
+        '600': '37.5rem',
         '606': '37.875rem',
         '743': '46.438rem',
         '1024': '64rem',
@@ -23,7 +24,8 @@ module.exports = {
       },
       height: {
         '58': '3.625rem',
-        '117': '7.313rem'
+        '117': '7.313rem',
+        '500': '31.25rem',
       },
       lineHeight: {
         '24': '1.5rem',
@@ -51,7 +53,7 @@ module.exports = {
       },
     },
     screens: {
-      'desktop': '1440px',
+      'desktop': '800px',
     },
   },
   plugins: [],

@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <body>
       <div class="">
-        {/* travar posição no mq desktop */}
         <header class="h-58 sticky top-0 flex grid-cols-1 bg-header-color justify-between items-center z-10">
           <div class="ml-4 desktop:hidden">
             <Image
@@ -54,37 +53,27 @@ export default function Home() {
         </div>
 
 
-        <span class="block w-398 font-thin text-2xl leading-7 tracking-wider text-center m-auto mb-16">Attention: components must be responsive and use CSS Flex and Grid layouts</span>
+        <span class="block w-398 font-h1 font-thin text-2xl leading-7 tracking-wider text-center m-auto mb-16 desktop:text-32">Attention: components must be responsive and use CSS Flex and Grid layouts</span>
 
         <h1 class="text-3xl text-center font-h1 font-bold w-283 m-auto mb-8 leading-37 desktop:w-489 desktop:text-5xl desktop:mb-12">Image List Component</h1>
 
-        <div class="w-400 m-auto flex flex-col grid-cols-1 gap-y-4 desktop:w-1024 desktop:grid desktop:grid-cols-2 desktop:grid-rows-2 desktop:gap-6">
+        <div class="w-400 m-auto grid grid-cols-1 gap-y-4 desktop:w-1024 desktop:grid-cols-1 desktop:gap-6">
 
-          <figure class="w-400">
-            <span class="inline-flex items-center w-400 pl-4 h-11 absolute bg-legend-color opacity-75 font-h1 text-base align-middle">Atom in the hand of a robot</span>
-            <Image
-              src="atom-pic.svg"
-              width={400}
-              height={400}
-              alt="robot hand and a atom" />
-          </figure>
+          <div class="grid gap-y-4 desktop:h-500 desktop:grid desktop:grid-cols-5 desktop:gap-x-4">
+            <div class="desktop:col-span-2">
+              <span class="inline-flex items-center w-full float-left pl-4 h-11 absolute bg-legend-color opacity-75 font-h1 text-base align-middle rounded-t-lg desktop:col-span-1">Atom in the hand of a robot</span>
+              <img class="h-auto rounded-lg desktop:w-400 desktop:h-500 desktop:object-cover" src="atom-pic.svg" />
+            </div>
 
-          <figure class="w-606">
-            <span class="inline-flex items-center w-400 pl-4 h-11 absolute bg-legend-color opacity-75 font-h1 text-base align-middle">Person working on a website</span>
-            <Image
-              src="pic-man-code.svg"
-              width={400}
-              height={400}
-              alt="man and a laptop" />
-          </figure>
+            <div class="desktop:col-span-3">
+              <span class="inline-flex items-center w-full float-left pl-4 h-11 absolute bg-legend-color opacity-75 font-h1 text-base align-middle rounded-t-lg">Person working on a website</span>
+              <img src="pic-man-code.svg " class="desktop:h-500 desktop:w-600 desktop:object-cover desktop:w-1024 rounded-lg" />
+            </div>
+          </div>
 
-          <div class="w-400 col-span-2 rounded-lg">
-            <span class="inline-flex items-center w-400 pl-4 h-11 absolute bg-legend-color opacity-75 font-h1 text-base align-middle">Women working in styles and ESLint configurations</span>
-            <Image
-              src="code-2.svg"
-              width={400}
-              height={400}
-              alt="woman with headphones coding"/>
+          <div class="mb-4">
+            <span class="inline-flex items-center w-full float-left pl-4 h-11 absolute bg-legend-color opacity-75 font-h1 text-base align-middle rounded-t-lg">Women working in styles and ESLint configurations</span>
+            <img src="code-2.svg" class="rounded-lg" />
           </div>
 
         </div>
