@@ -53,7 +53,7 @@ module.exports = {
       },
     },
     screens: {
-      'desktop': '800px',
+      'desktop': '1440px',
     },
   },
   plugins: [],
